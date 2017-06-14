@@ -2,8 +2,8 @@
 
 
 var localization = (function (localObj){
-		let russianFlag = document.getElementById("optionSelect");//value of option
-		var russianWords = [];
+		let russianFlag = document.getElementById("optionSelect").value;//value of option
+		var russianWords = ["valentines", "Easter"];
 		localObj.response = (function() {
 			if (russianFlag === Russian){
 				document.getElementById("translatedTxt").innerHTML = russianWords.join(" ");
@@ -21,7 +21,8 @@ var localization = (function (localObj){
 	//document.getElementById("translated").innerHTML = result of if statement;
 	
 
-const transBtn = document.getElementById("translateBtn")
+
+
 
 
 
