@@ -1,0 +1,1 @@
+document.getElementById("translateBtn").addEventListener("click", localObj.response);
