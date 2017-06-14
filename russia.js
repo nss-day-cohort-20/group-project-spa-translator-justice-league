@@ -1,17 +1,17 @@
 //Russian translator for localization object.
 
 
-var localization = (function (localObj){
+var Localization = (function (localObj){
 		let russianFlag = document.getElementById("optionSelect").value;//value of option
 		var russianWords = ["valentines", "Easter"];
-		localObj.response = (function() {
-			if (russianFlag === Russian){
+		localObj.response = function() {
+			if (russianFlag === "russian"){
 				document.getElementById("translatedTxt").innerHTML = russianWords.join(" ");
-				
+				 
 			}
-		}())
+		}
 		return localObj
-})(localization)
+})(Localization)
 //array of russian words.
 	// if (russianFlag === Russian){
 	// 			//join to page after splicing russian into the response array
