@@ -2,7 +2,8 @@
 
 
 var Localization = (function (localObj){
-		let russianFlag = document.getElementById("optionSelect").value;//value of option
+		let russianFlag = null;
+		let russianFlag = document.getElementById("optionSelect").addEventListener("change").value;//value of option
 		var russianWords = ["valentines", "Easter"];
 		localObj.response = function() {
 			if (russianFlag === "russian"){
