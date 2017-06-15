@@ -2,10 +2,10 @@
 
 
 var Localization = (function (localObj){
-		let russianFlag = document.getElementById("optionSelect").value;//value of option
+		let languageFlag = document.getElementById("optionSelect").value;//value of option
 		var russianWords = ["valentines", "Easter"];
-		localObj.response = function() {
-			if (russianFlag === "russian"){
+		localObj.toRussian = function() {
+			if (languageFlag === "russian"){
 				document.getElementById("translatedTxt").innerHTML = russianWords.join(" ");
 				 
 			}
