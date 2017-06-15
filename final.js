@@ -1,1 +1,1 @@
-document.getElementById("translateBtn").addEventListener("click", localObj.response);
+document.getElementById("translateBtn").addEventListener("click", Localization.response);
